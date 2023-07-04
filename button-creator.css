@@ -16,7 +16,7 @@ input {
 .button-creator {
   display: grid;
   padding: 30px;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 400px 1fr;
 }
 
 #controles {
@@ -44,4 +44,15 @@ input {
 .css span {
   display: block;
   margin-bottom: .5rem;
+}
+
+@media (max-width: 800px ){
+  .button-creator{
+    grid-template-columns: 1fr;
+  }
+
+  .resultado {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
